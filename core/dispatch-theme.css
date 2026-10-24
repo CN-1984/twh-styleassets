@@ -1,0 +1,29 @@
+/* Troop 450 | The Dispatch — scoped editorial brand layer.
+   Load after core/master.css. Avoid changing native TroopWebHost navigation. */
+@import url('https://fonts.googleapis.com/css2?family=Bitter:wght@600;700;800&family=Source+Sans+3:wght@400;600;700&family=Source+Serif+4:wght@400;600&display=swap');
+:root {
+  --dispatch-navy:#15384e;
+  --dispatch-slate:#456377;
+  --dispatch-olive:#6d7656;
+  --dispatch-paper:#f5f0e6;
+  --dispatch-cream:#e9ddc7;
+  --dispatch-red:#ad4338;
+  --dispatch-ink:#243b44;
+  --dispatch-heading:'Bitter',Georgia,serif;
+  --dispatch-body:'Source Serif 4',Georgia,serif;
+  --dispatch-ui:'Source Sans 3',Arial,sans-serif;
+}
+.dispatch-theme {background:var(--dispatch-paper);color:var(--dispatch-ink);font-family:var(--dispatch-body);line-height:1.6}
+.dispatch-theme *, .dispatch-theme *::before, .dispatch-theme *::after {box-sizing:border-box}
+.dispatch-theme h1,.dispatch-theme h2,.dispatch-theme h3 {font-family:var(--dispatch-heading);text-transform:none;letter-spacing:normal;line-height:1.18;color:var(--dispatch-navy)}
+.dispatch-theme p,.dispatch-theme li {font-family:var(--dispatch-body);color:var(--dispatch-ink)}
+.dispatch-theme .dispatch-kicker {font:700 .8rem/1.3 var(--dispatch-ui);letter-spacing:.12em;text-transform:uppercase;color:var(--dispatch-red)}
+.dispatch-theme .dispatch-masthead {background:var(--dispatch-navy);color:var(--dispatch-cream);padding:clamp(2rem,6vw,5rem) clamp(1rem,5vw,4rem)}
+.dispatch-theme .dispatch-masthead h1 {color:#fff;font-size:clamp(2.3rem,6vw,5rem);margin:.4rem 0}
+.dispatch-theme .dispatch-masthead p {color:var(--dispatch-cream)}
+.dispatch-theme .dispatch-card {background:#fffdf8;border:1px solid #d9d0c1;border-radius:6px;padding:clamp(1rem,3vw,2rem)}
+.dispatch-theme .dispatch-button {display:inline-block;background:var(--dispatch-navy);color:#fff;text-decoration:none;font:700 1rem var(--dispatch-ui);padding:.8rem 1.25rem;border-radius:4px}
+.dispatch-theme .dispatch-button:hover,.dispatch-theme .dispatch-button:focus-visible {background:var(--dispatch-red);color:#fff}
+.dispatch-theme a:focus-visible {outline:3px solid var(--dispatch-red);outline-offset:3px}
+.dispatch-theme .dispatch-container {max-width:1120px;margin:auto;padding:clamp(1rem,4vw,3rem)}
+@media(prefers-reduced-motion:reduce){.dispatch-theme *, .dispatch-theme *::before,.dispatch-theme *::after {animation:none!important;transition:none!important}}
